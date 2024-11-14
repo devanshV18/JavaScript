@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+    <!-- <div class="parent">
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div> -->
+</body>
+
+<script> 
+    // incase of queryAll and more than one doc present, parent returns a node list
+    const parent = document.querySelector('.parent') //gets the first doc with class name parent. 
+    console.log(parent)
+
+    // console.log(parent.children) //html collections -> for querySelector (only one doc)
+    // console.log(parent.children[1])
+    // console.log(parent.children[1].innerHTML)
+
+    //running classic forloop on html collections parent.children
+    //run after commenting logs above
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i])
+    //     console.log(parent.children[i].innerHTML)
+    // }
+
+    // parent.children[1].style.color = "orange"
+    // parent.children[1].style.padding = "2px"
+
+    console.log(parent.firstElementChild) //prints the first child elemnt of parent.
+    console.log(parent.lastElementChild) //prints the last child elemnt of parent.
+
+    const dayOne = document.querySelector('.day') //dayOne stores the first document with class name as day.
+    console.log(dayOne)
+    console.log(dayOne.innerHTML)
+
+    //traversing back from children to parent. children -> dayOne
+
+    console.log(dayOne.parentElement) //prints the doc div with class parent
+
+    console.log("NODES: ", parent.childNodes)
+
+</script>
+
+</html>
