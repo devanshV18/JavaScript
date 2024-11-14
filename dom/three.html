@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    //creating a function to create a list item and appending it to the existing ul
+    
+    //not a very optimsed method as we depend on appending a child which means we traverse the entire DOM tree to reach the end and append a CHild
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)      
+    }
+
+    addLanguage("python")
+    addLanguage("typeScript")
+
+
+    //optimised
+
+    function addOptimisedLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptimisedLanguage("Golang")
+
+    //edit a value
+
+    const secondLang = document.querySelector('li:nth-child(2)')
+    // secondLang.innerHTML = "Ruby"
+
+    //optimised
+    const newli = document.createElement('li')
+    newli.textContent = "swift"
+    secondLang.replaceWith(newli)
+
+    //edit3
+
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li>C++</li>'
+
+
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+
+</html>
