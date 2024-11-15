@@ -30,11 +30,14 @@
 
     let intervalRef
     const startPrinting = () => {
-        intervalRef = setInterval(sayDate,2000,"Hi")
+        if(!intervalRef){ //if intervalRef is null
+            intervalRef = setInterval(sayDate,2000,"Hi")
+        }
     }
 
     const stopPrinting = () => {
         clearInterval(intervalRef)
+        intervalRef = null
     }
 
     document.querySelector("#start").addEventListener('click', startPrinting)
