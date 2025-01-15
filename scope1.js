@@ -17,3 +17,5 @@ console.log("Outer/ Global scope a", a) //wont print as its out of scope -> let 
 console.log("No scope resol in c", c) //prints c even it is not present in this scope hence it is avoided to use, as it does not resolve block scope
 
 //NOTE -> EVERYTHING IN GLOBAL SCOPE CAN BE ACCESSED INSIDE BLOCK SCOPE, BUT ANYTHING INSIDE BLOCKSCOPE SHOULD NOT LEAK OUTSIDE IN THE GLOBAL SCOPE
+
+//comment block scope c and run to understand the difference, basically block scope c overwrites the global scope c

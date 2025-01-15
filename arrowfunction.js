@@ -7,7 +7,7 @@ const user = {
 
     welcomeMessage: function(){
         console.log(`Hello ${this.username}, Welcome`); //this points to current context which is the user object.
-        console.log(this) //prints current context        
+        console.log(this) //prints current context object  
     }
 
 }
@@ -62,8 +62,12 @@ const addTwoII = (num1, num2) => ( num1 + num2 ) //if we use (), no return keywo
 
 
 //to return an object, () has to be used.
+//the below function simply returns the object.
 const objFunction = () => (
     {username: "Devansh"}
 )
+
+const check = objFunction()
+console.log(check) //prints the returned object stored in check variable
 
 

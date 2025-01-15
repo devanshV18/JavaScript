@@ -25,18 +25,20 @@ map.set("IN", "Bharat") //changes value for the key IN but doesn't add another e
 
 console.log(map)
 
-
+//VVII
 //loop thru map
 //each key value pair is inserted in an array and printed
 //in this case we get three array each array has 2 elements, a key and a value
 
-for(const key of map){
-    console.log(key)
+//single keyword (here check) access every key value pair and we can print it, by default an array of every key and value is printed
+for(const check of map){
+    console.log(check)
 }
 
-//destructing key and value and in map while iterating/looping
-for(const [key,value] of map){
-    console.log(key, '=', value)
+//customised destructured printing, by accessing two values
+//destructing key and value in map while iterating/looping we can use any keyword although, not really key value is required to use
+for(const [check,mic] of map){
+    console.log(check, '=', mic)
 }
 
 

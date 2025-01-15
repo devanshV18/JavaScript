@@ -3,6 +3,7 @@
 //syntax -> (function...)()
 
 //named iffe
+
 (function chai(){
     console.log(`DB Connected`)
 })(); 

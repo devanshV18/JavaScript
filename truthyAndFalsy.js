@@ -23,10 +23,14 @@ if(Object.keys(emptyObj).length === 0){
 }
 
 
-//Nullis Calescing Operator (??) : null undefined
+//Null is Calescing Operator (??) : null undefined
 //safety check for null and undefined -> works like ||
 let val1
 val1 = 5 ?? 10 
+//the above line places 5 in val1 
+console.log(val1) //prints 5
+
+//the below line places 10 in val1
 val1 = null ?? 10
 
-console.log(val1)
+console.log(val1)//prints 10

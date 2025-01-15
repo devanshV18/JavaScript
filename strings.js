@@ -15,6 +15,7 @@ console.log(`Hello my name is ${name} with a repo count of ${repoCOunt}`)
 const gameName = new String('marshalop') //constructing using the inbuilt constructor.
 
 console.log(gameName)
+
 //we can use multiple prototype methods for the string no matter how wwe declare the string
 console.log(gameName.charAt(0)) //prints m
 console.log(gameName.toUpperCase())
@@ -22,7 +23,8 @@ console.log(gameName.toUpperCase())
 // extracts a part of string from the given string includes lower limit index and excludes uppler limit index.
 console.log(gameName.substring(0,5)) 
 
-//substring and slicer are absolutely same where they extract a part of string starting from lower limit and excluding upper limit, the difference is that slice accepts negative indices too. which means to process the string inr everse order.
+//substring and slicer are absolutely same where they extract a part of string excluding the lower limit and including upper limit, the difference is that slice accepts negative indices too. which means to process the string inr everse order.
+//in the below line first we reach -4 i.e h, then we reach -2 which is l, now we traverse from -4 to -2 but we include -2 and exclude -4
 console.log(gameName.slice(-4,-2)) 
 
 

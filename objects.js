@@ -54,7 +54,7 @@ console.log(user1)
 
 
 //to freeze changes to any object
-Object.freeze(user1) // now we cant override values in user1 object
+Object.freeze(user1) // now we can't override values in user1 object
 user1.email = "devansh@fb.com"
 console.log(user1) //user1.email -> remains devansh@chatgpt.com
 
@@ -70,7 +70,7 @@ user2.greetings2 = function(){
     console.log(`Hello user, ${this.name}`) //this refers to current object
 }
 
-console.log(user2.greetings) //returns function recognition -> fxn reference no execution
-console.log(user2.greetings()) 
+// console.log("One",user2.greetings) //returns function recognition -> only a message is returned acknowledging this is a functo=ion but the function is not executed
+console.log("Two",user2.greetings()) 
 
-console.log(user2.greetings2())
+console.log("Three",user2.greetings2())

@@ -5,7 +5,7 @@ const values = companies.forEach( (item) => {
     return item //Retruns undefined -> WHY?
 })
 
-//NOTE -> forEach loop doesn't return any thing. its only for operating on the value of array while sometimes we might want top directly each element (a string, an obj etc)
+//NOTE -> forEach loop doesn't return any thing. its only for operating on the value of array while sometimes we might want to access directly each element (a string, an obj etc)
 
 console.log(values) //prints undefined
 
@@ -43,9 +43,9 @@ console.log(newNums)
 
 
 
-//map -> picks each element aand processes it asper login, it also returns a new array.
+//map -> picks each element aand processes it as per logic, it also returns a new array.
 
-//all conventioins applies same like no braces single line return, if braces then use return etc.
+//all conventions applies same like no braces single line return, if braces then use return etc.
 
 const numbers = [1,2,3,4,5,6,78,10]
 

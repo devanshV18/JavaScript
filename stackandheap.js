@@ -24,3 +24,7 @@ let userTwo = userOne
 
 
 //userOne and userTwo point to the same document/ object inside the heap memory
+
+//both line prints the same object, as userTwo has a reference to userOne
+console.log(userOne)
+console.log(userTwo)

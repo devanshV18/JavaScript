@@ -27,7 +27,7 @@ console.log(myArr.includes(6)) //fasle -> returns boolean
 console.log(myArr.indexOf(1))
 
 
-//join -> adds all the elements of an array to a string
+//join -> adds all the elements of an array to a string with commas and no space
 const newArr = myArr.join() 
 
 console.log(typeof newArr) //string
@@ -42,9 +42,9 @@ const myNewArr = myArr.slice(1,3) // includes lower limit and excludes upper lim
 console.log("Slice ",myNewArr)
 console.log("B", myArr)
 
-//note -> original array remainns same 
+//note -> original array remainns same in slice
 
-//splice-> manipulates the original array by implementing the slice, removes the spliced part from the original array
+//VVVII -> splice-> manipulates the original array by implementing the slice, removes the sliced part from the original array and uniquely called as splice operation
 console.log("Describing Splice")
 console.log("A" ,myArr)
 const myNewArr2 = myArr.splice(1,3) //includes lower limit and excludes upper limit, argument are indices

@@ -21,7 +21,7 @@ one()
 
 
 // vvviii
-console.log(addOne(5)) //addOne function can be accessed here also as it it a function declaration not held in a variable
+console.log(addOne(5)) //addOne function can be accessed here also as it is a function declaration not held in a variable
 
 function addOne(num){
     return num + 1;

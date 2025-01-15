@@ -7,17 +7,17 @@ const companies = ["Catlog", "TCS", "Poshmark", "Honeywell", "HSBC"]
 
 //item has each element of the array thru out the iteration
 companies.forEach( function (item)  {
-    console.log(`The company is is ${item}`)
+    console.log(`The company is named ${item}`)
 } )
 
 
 
 //using arrow function
 companies.forEach((item) => {
-    console.log(`The company is is ${item}`)
+    console.log(`The company is arrow ${item}`)
 })
 
-
+//vvvii
 //NOTE -> we can pass a function (normal,arrow both) (predefined in the forEach argument as well but we just need to pass the reference and not execute it)
 
 function printMe(item){
@@ -32,6 +32,7 @@ const printMeArrow = (item) => {
 
 //apply print me function on each item of companies array, also we just passed the reference of function
 companies.forEach(printMe)
+companies.forEach(printMeArrow)
 
 //forEach has acces to multiple paramters
 
@@ -56,7 +57,7 @@ const myCompanies = [
     },
     {
         name:"Amazon",
-        location: "Gur"
+        location: "Guj"
     }
 ]
 

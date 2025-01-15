@@ -2,24 +2,25 @@ const myObj = {
     js: "Javascript",
     cpp: "c++",
     rp: "ruby",
-    swify: "Swift fot ios"
+    swift: "Swift fot ios"
 }
 
 //iterating objects -> for in loops (works for others as well)
 
+//below the single keyword (key/can be anything) accesses the keys
 //returns all key
 for(const key in myObj){
     console.log(key)
 }
 
-//getting values for the obj for each key
+
+//getting values for the obj for each key using the keyword key used to access each key of the object
 for(const key in myObj){
     console.log(`Key is ${key} and value is ${myObj[key]}`)
 }
 
-
+// VVVIII
 //for in on arrays
-
 const prog = ["js", "python", "java", "ruby", "swift"]
 
 //returns or prints index in i
@@ -40,6 +41,7 @@ map.set('FR', "France")
 map.set("IN", "Bharat") //changes value for the key IN but doesn't add another entry as "IN" => "Bharat"
 
 console.log(map) //prints comma sepated key value pair of map inside curly braces 
+//output : - { 'IN' => 'Bharat', 'USA' => 'United States', 'FR' => 'France' }
 
 
 //using for in loop on map

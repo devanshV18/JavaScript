@@ -35,13 +35,16 @@ const obj2 = {
     4: "D"
 }
 
-//both obj1 and obj2 inside an obj3 variable. NOT COMBINING
-// const obj3 = { obj1, obj2 } //both obj1 and obj2 inside an obj3 variable. // not combinig
+//both obj1 and obj2 inside an obj3 variable. NOT COMBINED
+// const obj3 = { obj1, obj2 } //both obj1 and obj2 can be combined inside an obj3 variable. 
 
-//lets combine M1
+
+//COMBINING OBJ1 AND OBJ2
+
+//M1 -> USING ASSIGN FUNCTION
 // const obj3 = Object.assign( {}, obj1, obj2 ) //combines obj1 and obj2 inside a single object
 
-//lets combine M2
+//M2 -> USING SIMPLY A SPREAD OPERATOR
 const obj3 = {...obj1, ...obj2}
 
 
@@ -80,7 +83,7 @@ console.log(valuesTinderUser2)
 const tinderUser2Entries = Object.entries(tinderUser2)
 console.log(tinderUser2Entries)
 
-//hasOwnProperty -> asks object if the sent property is present or not
+//hasOwnProperty -> asks object if the property passed as argument/parameter is present or not
 console.log(tinderUser2.hasOwnProperty('matches')) //returns false 
 
 
