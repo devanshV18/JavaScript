@@ -12,8 +12,12 @@ const user = {
 
 }
 
-user.welcomeMessage()
+user.welcomeMessage() //first log
+
+
 user.username = "sam"
+
+
 user.welcomeMessage() //it takes the changed value of username as we used this keyword to access the value
 
 //empty current context -> for node env, in browser this line gives window as an output.
